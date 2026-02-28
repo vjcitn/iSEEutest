@@ -1,7 +1,7 @@
 Package: iSEEu
 Type: Package
 Title: iSEE Universe
-Version: 1.23.0001
+Version: 1.23.0002
 Date: 2024-10-01
 Authors@R: 
     c(
@@ -57,7 +57,7 @@ Suggests:
     edgeR,
     AnnotationDbi,
     org.Hs.eg.db,
-    GO.db,
+    GO.db3,
     KEGGREST,
     knitr,
     igraph,
@@ -76,3 +76,4 @@ biocViews: ImmunoOncology, Visualization, GUI, DimensionReduction,
 RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
+Remotes: github::vjcitn/GO.db3
