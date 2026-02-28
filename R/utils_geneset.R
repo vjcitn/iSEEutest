@@ -125,7 +125,7 @@ NULL
         if (collection=="GO") {
             paste(
                 term_cmd,
-                "tab <- AnnotationDbi::select(GO.db::GO.db, keys=.all_terms, columns='TERM');",
+                "tab <- AnnotationDbi::select(GO.db3::GO.db(), keys=.all_terms, columns='TERM');",
                 "rownames(tab) <- tab$GOID;",
                 "tab$GOID <- NULL;", 
                 sep="\n")
