@@ -49,7 +49,7 @@ createGeneSetCommands <- function(collections=c("GO", "KEGG"), organism="org.Hs.
     if ("GO" %in% collections) {
         init[["GO"]] <- paste(
             sprintf(init.format, "GOALL"),
-            "tab <- AnnotationDbi::select(GO.db::GO.db, keys=.all_terms, columns='TERM');",
+            "tab <- AnnotationDbi::select(GO.db3::GO.db(), keys=.all_terms, columns='TERM');",
             "rownames(tab) <- tab$GOID;",
             "tab$GOID <- NULL;",
             sep="\n")
